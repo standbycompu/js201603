@@ -41,7 +41,7 @@ function max_adv(arr){
 }
 console.log(max_adv([13,86,3,-12,546,1289,76,0]));
 
-/*
+
 // (*) Find the sum of the input array
 // Ex [10,30,50] => 90
 function sum(arr){
@@ -49,6 +49,7 @@ function sum(arr){
         return total + item;
     });
 }
+console.log(sum([13,86,3,-12,546,1289,76,0]));
 
 
 // (**) Sum the odd numbers in the input array
@@ -58,8 +59,9 @@ function sumOdds(arr){
         return isOdd(item)?total+item:total;
     },0);
 }
+console.log(sumOdds([13,86,3,-12,546,1289,76,0]));
 
-
+/*
 // (***)  Reverse a string
 // Ex "abcd" => "dcab"
 function reverse(str){
