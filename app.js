@@ -9,8 +9,8 @@ app.listen(8000, function(){
     console.log('Server started!');
 });
 
-app.get('/', (req, res)={
-    res.send('Hello, please feed me the id, firstName and lastName');
+app.get('/', (req,res)=>{
+    res.send('Hello!');
 });
 
 app.get('/students', (req, res)=>{
