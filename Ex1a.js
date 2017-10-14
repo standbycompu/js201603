@@ -56,10 +56,26 @@ console.log(sum([13,86,3,-12,546,1289,76,0]));
 // Ex [3, 6, 8, 7] =>10
 function sumOdds(arr){
     return arr.reduce(function(total, item){
+		// console.log(isOdd(item));
+		console.log(total);
         return isOdd(item)?total+item:total;
     },0);
 }
-console.log(sumOdds([13,86,3,-12,546,1289,76,0]));
+
+//console.log(sumOdds([13,86,3,-12,546,1289,76,0]));
+console.log(sumOdds([1,2,3,4,5,6,7,8,9,0]));
+
+'use strict';
+// Filter an array for only odd numbers
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+
+let Odds = numbers.filter(function(number) {
+  return number % 2;
+});
+console.log(Odds);
+
+let Odds1 = numbers.filter(number => number % 2);
+console.log(Odds1);
 
 /*
 // (***)  Reverse a string
